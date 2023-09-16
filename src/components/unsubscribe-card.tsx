@@ -16,7 +16,7 @@ export default function UnsubscribeCard({}: UnsubscribeCardProps) {
   const searchParams = useSearchParams();
   const { status, updateStatus } = unsubscribeStore();
   const email = searchParams.get("email");
-  console.log(email);
+
   return (
     <>
       <AnimatePresence>

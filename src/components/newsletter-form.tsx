@@ -15,7 +15,7 @@ export interface NewsletterFormProps {}
 
 export default function NewsletterForm({}: NewsletterFormProps) {
   const { setData, status, updateStatus } = newsletterFormStore();
-  console.log(status);
+
   const {
     register,
     handleSubmit,
@@ -30,8 +30,7 @@ export default function NewsletterForm({}: NewsletterFormProps) {
     const subscribeToNewsletter = await subscribeToNewsletterAction(data.email);
     const sendNewsletterConfirmationEmail =
       await sendNewsletterConfirmationEmailAction(data.email);
-    console.log(sendNewsletterConfirmationEmail);
-    console.log(subscribeToNewsletter);
+
     if (!Boolean(subscribeToNewsletter)) return updateStatus("error");
     if (!Boolean(sendNewsletterConfirmationEmail)) return updateStatus("error");
     setData(data.email);

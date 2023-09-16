@@ -9,7 +9,7 @@ export interface SuccessCardProps {}
 
 export default function SuccessCard({}: SuccessCardProps) {
   const { updateStatus, data } = newsletterFormStore();
-  console.log(data);
+
   return (
     <Card size="fit" className="text-darkSlateGrey">
       <div className="flex flex-col gap-5 p-16 max-w-lg">
