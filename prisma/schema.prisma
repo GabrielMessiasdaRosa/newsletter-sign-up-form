@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Reader {
+  id                       String                 @id @unique @default(cuid())
+  email                    String                 @unique @db.VarChar(255)
+  NewsletterSubscription   NewsletterSubscription? @relation(fields: [newsletterSubscriptionId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  newsletterSubscriptionId String?
+}
+
+model NewsletterSubscription {
+  id     String   @id @unique @default(cuid())
+  title  String
+  reader Reader[]
+}

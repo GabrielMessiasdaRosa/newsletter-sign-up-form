@@ -19,6 +19,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
   integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
 
+"@hookform/resolvers@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-3.3.1.tgz#b7cbfe767434f52cba6b99b0a9a0b73eb8895188"
+  integrity sha512-K7KCKRKjymxIB90nHDQ7b9nli474ru99ZbqxiqDAWYsYhOsU3/4qLxW91y+1n04ic13ajjZ66L3aXbNef8PELQ==
+
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
@@ -122,6 +127,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@prisma/client@^5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-5.3.1.tgz#fc7fc2d91e814cc4fe18a4bc5e78bf851c26985e"
+  integrity sha512-ArOKjHwdFZIe1cGU56oIfy7wRuTn0FfZjGuU/AjgEBOQh+4rDkB6nF+AGHP8KaVpkBIiHGPQh3IpwQ3xDMdO0Q==
+  dependencies:
+    "@prisma/engines-version" "5.3.1-2.61e140623197a131c2a6189271ffee05a7aa9a59"
+
+"@prisma/engines-version@5.3.1-2.61e140623197a131c2a6189271ffee05a7aa9a59":
+  version "5.3.1-2.61e140623197a131c2a6189271ffee05a7aa9a59"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-5.3.1-2.61e140623197a131c2a6189271ffee05a7aa9a59.tgz#7eb6f5c6b7628b8b39df55c903f411528a6f761c"
+  integrity sha512-y5qbUi3ql2Xg7XraqcXEdMHh0MocBfnBzDn5GbV1xk23S3Mq8MGs+VjacTNiBh3dtEdUERCrUUG7Z3QaJ+h79w==
+
 "@swc/helpers@0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.1.tgz#e9031491aa3f26bfcc974a67f48bd456c8a5357a"
@@ -129,10 +146,17 @@
   dependencies:
     tslib "^2.4.0"
 
-"@types/node@20.6.1":
+"@types/node@*", "@types/node@20.6.1":
   version "20.6.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.6.1.tgz#8b589bba9b2af0128796461a0979764562687e6f"
   integrity sha512-4LcJvuXQlv4lTHnxwyHQZ3uR9Zw2j7m1C9DfuwoTFQQP4Pmu04O6IfLYgMmHoOCt0nosItLLZAH+sOrRE0Bo8g==
+
+"@types/nodemailer@^6.4.10":
+  version "6.4.10"
+  resolved "https://registry.yarnpkg.com/@types/nodemailer/-/nodemailer-6.4.10.tgz#746c952d5f22e48efded93c0a5607f59c6369b4c"
+  integrity sha512-oPW/IdhkU3FyZc1dzeqmS+MBjrjZNiiINnrEOrWALzccJlP5xTlbkNr2YnTnnyj9Eqm5ofjRoASEbrCYpA7BrA==
+  dependencies:
+    "@types/node" "*"
 
 "@types/prop-types@*":
   version "15.7.5"
@@ -387,6 +411,11 @@ glob@7.1.6:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
+goober@^2.1.10:
+  version "2.1.13"
+  resolved "https://registry.yarnpkg.com/goober/-/goober-2.1.13.tgz#e3c06d5578486212a76c9eba860cbc3232ff6d7c"
+  integrity sha512-jFj3BQeleOoy7t93E9rZ2de+ScC4lQICLwiAQmKMg9F6roKGaLSHoCDYKkWlSafg138jejvq/mTdvmnwDQgqoQ==
+
 graceful-fs@^4.1.2:
   version "4.2.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
@@ -533,6 +562,11 @@ node-releases@^2.0.13:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.13.tgz#d5ed1627c23e3461e819b02e57b75e4899b1c81d"
   integrity sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==
 
+nodemailer@^6.9.5:
+  version "6.9.5"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.9.5.tgz#eaeae949c62ec84ef1e9128df89fc146a1017aca"
+  integrity sha512-/dmdWo62XjumuLc5+AYQZeiRj+PRR8y8qKtFCOyuOl1k/hckZd8durUUHs/ucKx6/8kN+wFxqKJlQ/LK/qR5FA==
+
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
@@ -669,6 +703,13 @@ react-hook-form@^7.46.1:
   version "7.46.1"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.46.1.tgz#39347dbff19d980cb41087ac32a57abdc6045bb3"
   integrity sha512-0GfI31LRTBd5tqbXMGXT1Rdsv3rnvy0FjEk8Gn9/4tp6+s77T7DPZuGEpBRXOauL+NhyGT5iaXzdIM2R6F/E+w==
+
+react-hot-toast@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-hot-toast/-/react-hot-toast-2.4.1.tgz#df04295eda8a7b12c4f968e54a61c8d36f4c0994"
+  integrity sha512-j8z+cQbWIM5LY37pR6uZR6D4LfseplqnuAO4co4u8917hBUvXlEqyP1ZzqVLcqoyUesZZv/ImreoCeHVDpE5pQ==
+  dependencies:
+    goober "^2.1.10"
 
 react@18.2.0:
   version "18.2.0"
